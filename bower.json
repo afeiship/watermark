@@ -1,0 +1,29 @@
+{
+  "name": "angular-prevent-body-move",
+  "description": "AngularJS directive for prevent IOS html body move by touch.",
+  "main": [
+    "dist/css/prevent-body-move.css",
+    "dist/js/angular-prevent-body-move.js"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": ["prevent","body","move","angular","directive"],
+  "homepage": "https://github.com/afeiship/angular-prevent-body-move",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-module-stiffener": "afeiship/angular-module-stiffener"
+  }
+}
