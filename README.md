@@ -1,5 +1,5 @@
 # watermark
-> Watermark use nodejs.
+> Watermark based on sharp.
 
 ## installation
 ```shell

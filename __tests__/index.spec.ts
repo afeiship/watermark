@@ -13,7 +13,7 @@ describe('api.basic', () => {
       weiboUpload([res]).then((res2) => {
         console.log(res2);
         expect(res2.length).toBe(1);
-        expect(res2[0].includes('https://tva1.sinaimg.cn')).toBe(true);
+        expect(res2[0].url.includes('https://tva1.sinaimg.cn')).toBe(true);
         done();
       });
     });
