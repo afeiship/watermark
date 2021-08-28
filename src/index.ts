@@ -17,10 +17,10 @@ interface Options extends OverlayOptions {
 }
 
 export default async (inOptions: Options): Promise<Buffer> => {
-  const { src, cover, gravity, ...options } = inOptions;
+  const { src, cover, ...options } = inOptions;
   const buf = await NxFsOpen.from(src);
   const input = await NxFsOpen.from(cover);
   return sharp(buf)
-    .composite([{ input, gravity, ...options }])
+    .composite([{ input, ...options }])
     .toBuffer();
 };
