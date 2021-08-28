@@ -23,7 +23,6 @@ interface Options {
 export default async (inOptions: Options): Promise<Buffer> => {
   const { src, cover, gravity } = inOptions;
   const buf = await NxFsOpen.from(src);
-  return sharp(buf)
-    .composite([{ input: cover, gravity }])
-    .toBuffer();
+  const input = await NxFsOpen.from(cover);
+  return sharp(buf).composite([{ input, gravity }]).toBuffer();
 };
