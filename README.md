@@ -6,6 +6,9 @@
 npm install @jswork/watermark
 ```
 
+## GravityEnum
+![](./docs/GravityEnum.png)
+
 ## usage
 ```js
 import watermark from '@jswork/watermark';
