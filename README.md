@@ -6,9 +6,6 @@
 npm install @jswork/watermark
 ```
 
-## gravity
-![](./docs/GravityEnum.png)
-
 ## usage
 ```js
 import watermark from '@jswork/watermark';
@@ -21,3 +18,6 @@ watermark({
   // res: buffer
 });
 ```
+
+## gravity
+![](./docs/GravityEnum.png)
