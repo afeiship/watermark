@@ -9,7 +9,7 @@
 
   gulp.task('scripts:cjs', function () {
     return gulp
-      .src('src/index.ts')
+      .src('src/*.ts')
       .pipe($.jswork.pkgHeader())
       .pipe($.typescript({ ...tsconfig.compilerOptions, module: 'commonjs' }))
       .pipe(gulp.dest('dist/cjs'))
@@ -18,7 +18,7 @@
 
   gulp.task('scripts:esm', function () {
     return gulp
-      .src('src/index.ts')
+      .src('src/*.ts')
       .pipe($.jswork.pkgHeader())
       .pipe($.typescript({ ...tsconfig.compilerOptions, module: 'esnext' }))
       .pipe(gulp.dest('dist/esm'))
