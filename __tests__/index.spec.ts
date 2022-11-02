@@ -25,7 +25,7 @@ describe('api.basic', () => {
   test.only('resize case', (done) => {
     fn({
       src: 'https://img9.doubanio.com/view/photo/ratio_poster/public/p1483320569.jpg',
-      cover: '/Users/aric.zheng/github/watermark/__tests__/simi-logo-blue.png',
+      cover: './__tests__/simi-logo-blue.png',
       gravity: 'northwest'
     }).then((res) => {
       weiboUpload([res]).then((res2) => {
